@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="container">
+<div class="space"></div>
+<h1 id="title">Survey Form</h1>
+
+<p id="description">Let me know your programming knoledge</p>
+
+<form class="survey-form" id="survey-form" method="POST" action="https://crossorigin.me/https://freecodecamp.com">
+
+<label id="name-label" class="gitem1">name
+	<div class="input-group resize ">
+		
+		<span class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></span>
+		
+		<input id="name" autofocus="" class="form-control resize" type="text" placeholder="enter your name" required>
+</div>
+</label>
+
+
+
+<div class="form-group gitem2">
+<label id="email-label" for="email" class="text-justify">email</label>
+<div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+<input id="email" autofocus="" type="email" placeholder="email" class="form-control" aria-describedby="emailHelp" aria type="text" required>
+</div>
+<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+</div>
+
+
+	<div class="form-group gitem3" >
+		<label id="number-label" for="Age">Age</label>
+		<input class="form-control"  style="width:100px;" id="number" autofocus="" type="number" min=1 max=125 placeholder="number" required>
+	</div>
+
+	<div class="gitem4">
+		<label>carrer</label>
+	<select class="form-control"  style="width:200px;"  id="dropdown">
+		<option>web dev</option>
+		<option>server admistration</option>
+		<option>Agile Engineering</option>
+		<option>game dev</option>
+		<option>ios app dev</option>
+		<option>Android app dev</option>
+		<option>windows app dev</option>
+		<option>ASTECT</option>
+	</select>
+	</div>
+
+	<div class="gitem5">
+	<fieldset class="form-group">
+		<ol class="order"><span style="text-align:center;color:#ccc;"><u>Work space</u></span>
+			<li >
+				<label>remote work</label>
+				<input type="radio" value="remotework" name="field"><span></span>
+				</li>
+				<li><label>indie</label>
+				<input type="radio" value="indie" name="field"><span></span></li>
+				<li><label>fixed</label>
+				<input type="radio" value="fixed" name="field"><span></span></li>
+
+
+			</li>
+		</ol>
+	</fieldset>
+	</div>
+
+	<div class="gitem6">
+	<fieldset>
+		<ol type="disk" class="order"><span style="text-align:center;color:#ccc; position: relative; width:100px !important;"><u>Languages</u></span>
+			<li >
+				<label >python</label>
+				<input type="checkbox" value="python"><span></span></li>
+				<li><label >java</label>
+				<input type="checkbox" value="java"><span></span></li>
+				<li><label >java-script</label>
+				<input type="checkbox" value="java-script"><span></span></li>
+				<li><label >ruby</label>
+				<input type="checkbox" value="ruby"><span></span></li>
+				<li><label >c#</label>
+				<input type="checkbox" value="c#"><span></span></li>
+				<li><label >c++</label>
+				<input type="checkbox" value="c++"><span></span></li>
+
+			
+		</ol>
+	</fieldset>
+	</div>
+
+	<div class="form-group purple-border gitem7">
+    <label for="exampleFormControlTextarea4">Talk to me</label>
+    <textarea class="form-control" id="Textarea" rows="3"></textarea>
+	</div>
+
+
+
+	<div class="gitem8">
+	<button id="submit" class="btn btn-primary" type="submit">submit</button>
+
+	</div>
+</form>
+
+</body>
+</html>
